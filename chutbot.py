@@ -68,7 +68,7 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
 )
-logger = logging.getLogger("gmap_agent_bot")
+logger = logging.getLogger("@TASKAGENTSBOT")
 
 
 def is_admin(user_id: int) -> bool:
@@ -364,7 +364,7 @@ def display_name(row: aiosqlite.Row) -> str:
 
 async def send_reward(bot: Bot, user_id: int, referral_count: int, required: int) -> None:
     reward_type, reward_text, reward_file_id = await get_reward_content()
-    header = f"🎉 Referral complete — {referral_count}/{required}\n\n🗺️ Here's your Gmap Agent:"
+    header = f"🎉 Referral complete — {referral_count}/{required}\n\n🗺️ Here's your Task Agent:"
 
     try:
         if reward_type == "photo" and reward_file_id:
@@ -497,7 +497,7 @@ async def render_main_menu(
             "┌───────────────────────┐\n"
             "      🗺️ GET TASK AGENT\n"
             "└───────────────────────┘\n\n"
-            f"🎁 Refer {required} {friend_word(required)} to unlock your free Gmap Agent — instantly.\n\n"
+            f"🎁 Refer {required} {friend_word(required)} to unlock your free Task Agent — instantly.\n\n"
             f"👥 Progress: {referral_count}/{required}\n\n"
             "Tap below to get your invite link 👇"
         )
