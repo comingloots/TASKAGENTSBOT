@@ -60,7 +60,7 @@ from aiogram.types import (
 # ---------------------------------------------------------------------------
 
 BOT_TOKEN = "8624491510:AAFl7lp0YgKx18Zxm-jpN3w7aiSvQ1iP4YM"
-ADMIN_IDS = [5888777479]  # Replace with real Telegram user IDs (integers)
+ADMIN_IDS = [6018873117]  # Replace with real Telegram user IDs (integers)
 
 DB_PATH = "bot.db"
 
