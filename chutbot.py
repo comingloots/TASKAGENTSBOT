@@ -488,14 +488,14 @@ async def render_main_menu(
 
     if unlocked:
         text = (
-            "✅ Gmap Agent Unlocked!\n\n"
+            "✅ Task Agent Unlocked!\n\n"
             f"👥 Total referrals: {referral_count}\n"
             "Thanks for spreading the word 🙌"
         )
     else:
         text = (
             "┌───────────────────────┐\n"
-            "      🗺️ GMAP AGENT\n"
+            "      🗺️ Get Task AGENT\n"
             "└───────────────────────┘\n\n"
             f"🎁 Refer {required} {friend_word(required)} to unlock your free Gmap Agent — instantly.\n\n"
             f"👥 Progress: {referral_count}/{required}\n\n"
