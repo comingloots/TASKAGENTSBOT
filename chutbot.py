@@ -136,7 +136,7 @@ async def init_db() -> None:
             "required_referrals": "1",
             "reward_type": "text",
             "reward_text": (
-                "Your Gmap Agent reward hasn't been configured yet -- "
+                "Your Task Agent reward hasn't been configured yet -- "
                 "set it via /admin -> Set Reward Content."
             ),
             "reward_file_id": "",
@@ -495,7 +495,7 @@ async def render_main_menu(
     else:
         text = (
             "┌───────────────────────┐\n"
-            "      🗺️ Get Task AGENT\n"
+            "      🗺️ GET TASK AGENT\n"
             "└───────────────────────┘\n\n"
             f"🎁 Refer {required} {friend_word(required)} to unlock your free Gmap Agent — instantly.\n\n"
             f"👥 Progress: {referral_count}/{required}\n\n"
@@ -677,7 +677,7 @@ async def cb_referral_link(callback: CallbackQuery, bot: Bot) -> None:
     text = (
         "Your personal invite link 👇\n\n"
         f"<code>{link}</code>\n\n"
-        "Share it — the moment your friend joins and verifies, you unlock the Gmap Agent automatically 🎉"
+        "Share it — the moment your friend joins and verifies, you unlock the Tasks Agent automatically 🎉"
     )
     kb = InlineKeyboardMarkup(
         inline_keyboard=[
