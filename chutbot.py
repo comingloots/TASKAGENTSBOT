@@ -1,5 +1,5 @@
 """
-Task Agent Referral Bot
+Task Agents Referral Bot
 ========================
 
 NOTES FOR THE HUMAN OPERATOR (read before running)
